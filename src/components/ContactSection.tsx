@@ -13,11 +13,26 @@ export function ContactSection() {
     phone: "",
     message: "",
   })
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("[v0] Form submitted:", formData)
-    // Handle form submission
+    setStatus("sending")
+    try {
+      const res = await fetch("https://functions.poehali.dev/6653075d-87b8-4332-bf93-e66773f35ccc", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+      if (res.ok) {
+        setStatus("success")
+        setFormData({ name: "", email: "", phone: "", message: "" })
+      } else {
+        setStatus("error")
+      }
+    } catch {
+      setStatus("error")
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -113,10 +128,16 @@ export function ContactSection() {
                       className="transition-all focus:scale-[1.02]"
                     />
                   </div>
-                  <Button type="submit" size="lg" className="w-full sm:w-auto group">
+                  <Button type="submit" size="lg" className="w-full sm:w-auto group" disabled={status === "sending"}>
                     <Send className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    Отправить
+                    {status === "sending" ? "Отправляю..." : "Отправить"}
                   </Button>
+                  {status === "success" && (
+                    <p className="text-sm text-green-500 font-medium">Сообщение отправлено! Somanynicks скоро ответит ;)</p>
+                  )}
+                  {status === "error" && (
+                    <p className="text-sm text-red-500 font-medium">Ошибка отправки. Попробуйте позже.</p>
+                  )}
                 </form>
               </CardContent>
             </Card>
