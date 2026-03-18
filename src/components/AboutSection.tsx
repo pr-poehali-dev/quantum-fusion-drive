@@ -2,19 +2,19 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Sparkles } from "lucide-react"
 
 const values = [
-  { title: "Качество", description: "Высококлассные решения, соответствующие самым высоким стандартам" },
-  { title: "Доступность", description: "Профессиональные сайты по честным и прозрачным ценам" },
-  { title: "Прозрачность", description: "Четкая коммуникация без скрытых платежей" },
-  { title: "Клиентоориентированность", description: "Ваши цели и пожелания всегда в приоритете" },
-  { title: "Масштабируемость", description: "Сайты, которые растут вместе с вашим бизнесом" },
-  { title: "Гибкость", description: "Быстрая адаптация под меняющиеся потребности" },
+  { title: "Производительность", description: "Молниеносная скорость и стабильность на любых устройствах и платформах" },
+  { title: "Инновации", description: "Передовые технологии, разработанные командой RT GAMES с нуля" },
+  { title: "Надёжность", description: "Проверенная архитектура, которой можно доверять в любой ситуации" },
+  { title: "Для пользователя", description: "Интуитивный интерфейс, созданный с заботой о каждом" },
+  { title: "Масштабируемость", description: "Платформа, которая растёт вместе с вашими потребностями" },
+  { title: "Безопасность", description: "Защита данных и конфиденциальность на всех уровнях системы" },
 ]
 
 const stats = [
-  { number: "50+", label: "Проектов" },
-  { number: "45+", label: "Довольных клиентов" },
-  { number: "30+", label: "Созданных логотипов" },
-  { number: "3+", label: "Года опыта" },
+  { number: "RT", label: "GAMES — создатели" },
+  { number: "1", label: "Уникальная платформа" },
+  { number: "∞", label: "Возможностей" },
+  { number: "24/7", label: "Доступность" },
 ]
 
 export function AboutSection() {
@@ -27,19 +27,19 @@ export function AboutSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
             <Sparkles className="h-4 w-4" />
-            О CodeCraft
+            О Indus co.
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Качество, которое{" "}
+            Платформа, которая{" "}
             <span className="text-primary relative">
-              впечатляет
+              меняет всё
               <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
                 <path d="M0 4C50 2 150 6 200 4" stroke="currentColor" strokeWidth="2" className="text-primary" />
               </svg>
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Создание сайта не должно быть дорогим. Мы разрабатываем индивидуальные решения, которые идеально соответствуют пожеланиям каждого клиента.
+            Indus co. — это продукт команды RT GAMES. Мы создали платформу, которая объединяет мощь современных технологий и простоту использования в одном решении.
           </p>
         </div>
 

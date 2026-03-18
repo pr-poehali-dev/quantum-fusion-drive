@@ -4,40 +4,40 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "Умный помощник по выборам",
-    category: "AI/ML и веб-разработка",
-    image: "/omgekeerdestemwijzer-banner.png",
+    title: "Indus OS",
+    category: "Операционная система",
+    image: "/placeholder.jpg",
     description:
-      "AI-приложение для выборов. Пользователи задают вопросы о позициях партий и получают 100% фактические ответы из официальных программ с использованием RAG-технологии.",
-    url: "https://de-omgekeerde-stemwijzer.onrender.com/",
-    tags: ["Next.js", "AI/ML", "RAG", "TypeScript"],
+      "Флагманский продукт RT GAMES — операционная система нового поколения. Быстрая, безопасная и красивая. Создана для тех, кто ценит качество.",
+    url: "https://indus-os.com",
+    tags: ["RT GAMES", "OS", "Технологии"],
   },
   {
-    title: "Автомойка Tahsin",
-    category: "Веб-дизайн и разработка",
-    image: "/autopoetsbedrijf-tahsin-project.png",
+    title: "Indus co. Platform",
+    category: "Цифровая платформа",
+    image: "/placeholder.svg",
     description:
-      "Профессиональный сайт для автомойки с 20-летним опытом. Полная презентация услуг, автомойки и гаража с современным адаптивным дизайном.",
-    url: "https://www.autopoetsbedrijftahsin.nl/",
-    tags: ["React", "Next.js", "Tailwind CSS"],
+      "Единая экосистема приложений и сервисов Indus co. Всё, что нужно — в одном месте. Интегрированные инструменты для работы и развлечений.",
+    url: "https://indus-os.com",
+    tags: ["Платформа", "Экосистема", "RT GAMES"],
   },
   {
-    title: "Кадровое агентство CAN",
-    category: "Веб-разработка",
-    image: "/can-uitzendbureau-project.png",
+    title: "RT GAMES Studio",
+    category: "Игровая разработка",
+    image: "/placeholder.svg",
     description:
-      "Кадровое агентство с 30-летним опытом в садоводческом секторе. Сайт с обзором услуг и прямыми контактами для работодателей и соискателей.",
-    url: "https://canbv.nl/",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+      "Студия RT GAMES — создатель Indus co. Профессиональная команда разработчиков, дизайнеров и инженеров, объединённых одной миссией.",
+    url: "https://indus-os.com",
+    tags: ["RT GAMES", "Studio", "Разработка"],
   },
   {
-    title: "Портфолио Murat Sahin",
-    category: "Портфолио-сайт",
-    image: "/murat-sahin-portfolio.png",
+    title: "Indus Community",
+    category: "Сообщество",
+    image: "/placeholder.jpg",
     description:
-      "Профессиональное портфолио full-stack разработчика. Демонстрация проектов, навыков и опыта с современным минималистичным дизайном и темной темой.",
-    url: "https://murat-sahin-dev.vercel.app/",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
+      "Растущее сообщество пользователей и разработчиков вокруг платформы Indus co. Присоединяйтесь к тысячам людей, которые уже с нами.",
+    url: "https://indus-os.com",
+    tags: ["Сообщество", "Пользователи", "Open Source"],
   },
 ]
 
@@ -46,9 +46,9 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наше портфолио</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Продукты Indus co.</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Ознакомьтесь с подборкой наших последних проектов и узнайте, как мы помогаем бизнесу расти с помощью мощных цифровых решений.
+            Всё, что создала RT GAMES — от операционной системы до экосистемы сервисов. Узнайте, что входит во вселенную Indus co.
           </p>
         </div>
 
